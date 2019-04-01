@@ -104,4 +104,27 @@ public class HardwareController {
     }
 
 
+    @DeleteMapping(value = "id")/*Komunikasi API dengan jenis GET*/
+    ResponseEntity<Response> deleteById (@PathVariable ("id")Long id)/*Mengambil Request data dari Berdasarkan id*/
+    {
+        /*Informasi Tentang Nama Method*/
+        String nameofCurrMethod = new Throwable()
+                .getStackTrace()[0]
+                .getMethodName();
+
+        /*Memanggil Class Response yang telah dibuat*/
+        Response response = new Response();
+        response.setService(this.getClass().getName() + nameofCurrMethod);
+        response.setMessage("Data Berhasil dihapus");
+        response.setData(hardwareService.findById(id));
+
+        hardwareService.delete(id);
+
+        return  ResponseEntity
+                .status(HttpStatus.OK)
+                .contentType(MediaType.APPLICATION_JSON)
+                .body(response);
+    }
+
+
 }

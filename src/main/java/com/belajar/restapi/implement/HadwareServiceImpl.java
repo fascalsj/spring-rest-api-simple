@@ -36,4 +36,9 @@ public class HadwareServiceImpl implements HardwareService {
         return hardwareRepository.save(hardware);
     }
 
+    @Override
+    public void delete(Long id) {
+        hardwareRepository.deleteById(id);
+    }
+
 }

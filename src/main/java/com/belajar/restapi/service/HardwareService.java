@@ -13,4 +13,6 @@ public interface HardwareService {
     Hardware update(Long id, Hardware hardware);
 
     Hardware create(Hardware hardware);
+
+    void delete(Long id);
 }

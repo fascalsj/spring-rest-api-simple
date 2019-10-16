@@ -1,0 +1,5 @@
+<jmapper>
+    <class name="com.belajar.restapi.entity.MataKuliah">
+        <global/>
+    </class>
+</jmapper>

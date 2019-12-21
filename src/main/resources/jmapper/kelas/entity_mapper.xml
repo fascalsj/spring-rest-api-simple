@@ -1,5 +1,5 @@
 <jmapper>
-    <class name="com.belajar.restapi.entity.Kelas">
+    <class name="com.belajar.rest.api.entity.Kelas">
         <global/>
     </class>
 </jmapper>

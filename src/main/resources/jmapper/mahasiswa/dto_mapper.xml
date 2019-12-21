@@ -1,5 +1,5 @@
 <jmapper>
-    <class name="com.belajar.restapi.dto.Mahasiswa">
+    <class name="com.belajar.rest.api.dto.MahasiswaDTO">
         <global/>
     </class>
 </jmapper>
